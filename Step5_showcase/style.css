@@ -1,11 +1,14 @@
-body * {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     color: black;
     font-size: 15px;
     line-height: 1.5;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -25,10 +28,7 @@ body * {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 13px;
-}
-
-.main-menu {
-    width: 100%;
+    background-color: white;
 }
 
 .right-menu {
@@ -40,7 +40,12 @@ body * {
     gap: 10px;
 }
 
+.right-menu a {
+    color: #262626;
+}
+
 .main-menu {
+    width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -53,7 +58,7 @@ body * {
     color: #262626;
     text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 
 }
 
@@ -83,8 +88,39 @@ main section, footer section {
     background-size: 30%;
     background-origin: content-box;
     background-clip: content-box;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.showcase p, .showcase h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #378ff5;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    opacity: 90%;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark .btn {
+    background-color: #f4f4f4;
+    color: #333;
 }
